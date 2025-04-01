@@ -42,7 +42,7 @@ Please note that these bots are intended for experienced traders who are familia
  # 😄 Want to help keeping the project?<br>
 
 You want to contribute to the project? 
-Make a donation on.
+Make a donation to us, WhatsApp us wa.me/254103601101 for donation payment details.
 
 
 </br>
