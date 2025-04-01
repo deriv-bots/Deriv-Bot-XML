@@ -44,16 +44,7 @@ Please note that these bots are intended for experienced traders who are familia
 You want to contribute to the project? 
 Make a donation on.
 
-Buy me coffee 😄 \
-https://www.buymeacoffee.com/lewisluseka \
-Thanks in advance 
 
-
-<a href="https://www.paypal.com/donate/?hosted_button_id=X7BD358658J8W">
-    <img src="https://raw.githubusercontent.com/iqoptionapi/iqoptionapi/master/docs/paypal-donate-button.png"
-        alt="English" width="200" height="80" />
-        </a>
-     
 </br>
 </br>
 I also have premium bots available for sale 💸 
@@ -69,31 +60,7 @@ There are almost 40+ premium bots and strategies.\
 I created this combo to help people so that they can test more bot and they can find out their best-suited bot for their own. Not only this but all the upcoming future premium bots also free for you.If you like you can get the combo offer.
 
 
-Some of the best bots you can test to your account
-
-## BINARY BOT THE DOLLAR PATH PRO BY LEWIS LUSEKA (GITHUB) +254111421356.xml
-## DERIV BOT RISEFALL (AxB) BY LEWIS LUSEKA (GITHUB) +254111421356.xml
-## BinaryBotsAfrica [BBA] Free Asians Bot.xml
-## BinaryBotsAfrica [BBA] Free Rise and Fall Bot.xml
-## BinaryBotsAfrica [BBA] Free Touch Bot.xml
-## 1 Tick DigitDiffer.xml
-## Binogator Gecko Pro v22.07.18.xml
-## DIGIT DIFFER AABA.xml
-## Binogator Mantis (free bot) 22.06.10.xml
-## DigitDiff_NO_M_V1.xml
-## Binogator Scuba v22.0.29.xml
-## EVENODD BREAKER.xml
-## Digit Prime Strategy.xml
-## PUT-Lower-v2.xml
-## Lewis Luseka +254111421356 Trade Bot.xml
-## RISE FALL MARUBOZU 3.xml
-## Premium Digit Pairing .xml
-## RISE FALL RANGER.xml
-## And All the manuall strategy...
-
-If you want to get bot/strategy one by one, 
-
-Contact me through derivkingnato@gmail.com OR by WhatsApp https://254103601101
+If you want to get bot/strategy one by one, Contact me through derivkingnato@gmail.com OR by WhatsApp https://254103601101
 
 
 # Tips
@@ -111,7 +78,7 @@ Binary Bot & Deriv Bot can be a powerful tool for automating binary options trad
 
 # Support
 
-If you have any questions or issues related to the use of the bots, please feel free to contact the developer at lewisluseka@gmail.com. Additionally, you can also seek support from the Binary.com or Deriv.com community.
+If you have any questions or issues related to the use of the bots, please feel free to contact the developer at derivkingnato@gmail.com . Additionally, you can also seek support from the Deriv.com community.
 
 # Contribute
 
