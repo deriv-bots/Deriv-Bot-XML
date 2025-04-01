@@ -17,7 +17,7 @@ Deriv Bots
   </strong>
 </p>
 <p>
-This is  a collection of xml deriv bots that run on https://dbot.binary.com </br>
+This is  a collection of xml deriv bots that run on https://dbot.deriv.com </br>
 Deriv bot trading is a type of automated trading that can be used to make quick money with littlerisk. </br>
 However, at the moment deriv bot may be the safest option for you, If you use an advanced-lower trading strategy. </br>
 These bots frequently delivered a modest rate of return but a high winning rate. When engaging martingale stages for your bots, you must use extreme caution </br>
