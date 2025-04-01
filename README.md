@@ -1,7 +1,7 @@
-# Binary-Deriv-Bot-XML
-This is a collection of https://bot.binary.com and https://app.deriv.com xml bots
+# Deriv-Bots-XML
+This is a collection https://dbot.deriv.com xml bots
 <h1 align="center">
-Binary Bot & Deriv Bot
+Deriv Bots
 </h1>
 
 <p align="center">
@@ -17,16 +17,16 @@ Binary Bot & Deriv Bot
   </strong>
 </p>
 <p>
-This is  a collection of xml binary bots that run on https://bot.binary.com or https://app.deriv.com </br>
-Binary bot trading is a type of automated trading that can be used to make quick money with littlerisk. </br>
-However, at the moment binary bot may be the safest option for you, If you use an advanced-lower trading strategy. </br>
-This bot frequently delivered a modest rate of return but a high winning rate. When engaging martingale stages for your bots, you must use extreme caution </br>
+This is  a collection of xml deriv bots that run on https://dbot.binary.com </br>
+Deriv bot trading is a type of automated trading that can be used to make quick money with littlerisk. </br>
+However, at the moment deriv bot may be the safest option for you, If you use an advanced-lower trading strategy. </br>
+These bots frequently delivered a modest rate of return but a high winning rate. When engaging martingale stages for your bots, you must use extreme caution </br>
 To make a trading decision, we develop a strategy that includes, among other things, tick movement, indicators, last digit analysis, last digit pattern, trend analysis, and visual experience.
 </p>
 
 # How to Start  :
 
-Step 1 : Go to https://bot.binary.com or https://app.deriv.com \
+Step 1 : Go to https://dbot.deriv.com \
 Step 2 : Upload the downloaded .xml file \
 Step 3 : Run the bot \
 Step 4 : Make money \
@@ -59,9 +59,9 @@ Thanks in advance
 I also have premium bots available for sale 💸 
 
 
-Get All Bots And strategies:by contact by E-Mail lewisluseka@gmail.com
+Get All Bots And strategies by contacting me by E-Mail derivkingnato@gmail.com
 
-Join my telegram channel here : https://t.me/deriv_binary_forex_trading
+Join my telegram channel here : https://t.me/DerivBot_Trading
 
 If you want to get all the premium bot/strategy, 
 
@@ -93,9 +93,7 @@ Some of the best bots you can test to your account
 
 If you want to get bot/strategy one by one, 
 
-We accept skrill/paypal/perfect money/btc/ card payment. 
-
-Contact me through lewisluseka@gmail.com OR by WhatsApp https://254780392681
+Contact me through derivkingnato@gmail.com OR by WhatsApp https://254103601101
 
 
 # Tips
