@@ -1,0 +1,82 @@
+//@version=5
+strategy("1-Min High Probability Strategy", overlay=true, margin_long=100, margin_short=100, pyramiding=1)
+
+// Input parameters
+fastLength = input(5, title="Fast EMA Length")
+slowLength = input(12, title="Slow EMA Length")
+rsiLength = input(7, title="RSI Length")
+rsiOverbought = input(75, title="RSI Overbought Level")
+rsiOversold = input(25, title="RSI Oversold Level")
+volumeAvgLength = input(10, title="Volume MA Length")
+minVolumeFactor = input(2.0, title="Minimum Volume Factor")
+atrLength = input(14, title="ATR Length")
+atrMultiplier = input(1.5, title="ATR Multiplier")
+stopLossPct = input(0.3, title="Stop Loss %") / 100
+takeProfitPct = input(0.6, title="Take Profit %") / 100
+trailOffset = input(0.2, title="Trailing Stop %") / 100
+
+// Calculate indicators
+fastEMA = ta.ema(close, fastLength)
+slowEMA = ta.ema(close, slowLength)
+rsi = ta.rsi(close, rsiLength)
+volumeMA = ta.sma(volume, volumeAvgLength)
+volumeSpike = volume > volumeMA * minVolumeFactor
+atr = ta.atr(atrLength)
+supertrendUp = hl2 - (atrMultiplier * atr)
+supertrendDown = hl2 + (atrMultiplier * atr)
+macdLine = ta.ema(close, 12) - ta.ema(close, 26)
+signalLine = ta.ema(macdLine, 9)
+macdBullish = macdLine > signalLine
+macdBearish = macdLine < signalLine
+
+// Trend direction
+uptrend = fastEMA > slowEMA and close > fastEMA and close > supertrendUp
+downtrend = fastEMA < slowEMA and close < fastEMA and close < supertrendDown
+
+// Entry conditions with multiple confirmations
+longCondition = uptrend and 
+               rsi < rsiOversold and 
+               volumeSpike and 
+               close > open and 
+               macdBullish and
+               ta.crossover(close, supertrendUp)
+
+shortCondition = downtrend and 
+                rsi > rsiOverbought and 
+                volumeSpike and 
+                close < open and 
+                macdBearish and
+                ta.crossunder(close, supertrendDown)
+
+// Exit conditions
+exitLong = rsi > rsiOverbought or (uptrend == false)
+exitShort = rsi < rsiOversold or (downtrend == false)
+
+// Calculate stop loss and take profit levels
+stopLossLevel = strategy.position_avg_price * (1 - stopLossPct)
+takeProfitLevel = strategy.position_avg_price * (1 + takeProfitPct)
+trailingStop = close * (1 - trailOffset)
+
+// Strategy execution
+if (longCondition)
+    strategy.entry("Long", strategy.long)
+    strategy.exit("Exit Long", "Long", 
+                 stop=stopLossLevel, 
+                 limit=takeProfitLevel, 
+                 trail_price=trailingStop)
+    
+if (shortCondition)
+    strategy.entry("Short", strategy.short)
+    strategy.exit("Exit Short", "Short", 
+                 stop=stopLossLevel * (1 + stopLossPct), 
+                 limit=takeProfitLevel * (1 - takeProfitPct), 
+                 trail_price=trailingStop * (1 + trailOffset))
+
+// Plotting
+plot(fastEMA, color=color.new(color.blue, 0), title="Fast EMA", linewidth=2)
+plot(slowEMA, color=color.new(color.red, 0), title="Slow EMA", linewidth=2)
+plot(supertrendUp, color=color.new(color.green, 0), title="SuperTrend Up")
+plot(supertrendDown, color=color.new(color.red, 0), title="SuperTrend Down")
+hline(rsiOverbought, "RSI Overbought", color=color.new(color.red, 70))
+hline(rsiOversold, "RSI Oversold", color=color.new(color.green, 70))
+bgcolor(volumeSpike ? color.new(color.blue, 90) : na, title="Volume Spike")
