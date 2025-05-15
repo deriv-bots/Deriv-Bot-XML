@@ -1,13 +1,13 @@
 # Deriv-Bots-XML
 This is a collection https://dbot.deriv.com xml bots
 
-For inquiries;
+For more powerful profitable botsor one on one mentorship chat me;
 
 WhatsApp Chat me at https://wa.me/254747204803
 
 or 
 
-Telegram Chat me at https://t.me/Deriv_Ace
+Telegram Chat me at https://t.me/DerivBotNato
 
 
 <h1 align="center">
@@ -62,7 +62,7 @@ I also have premium bots available for sale 💸
 
 Get All Bots And strategies by contacting me by E-Mail derivkingnato@gmail.com
 
-Join my telegram channel here : https://t.me/DerivBot_Trading
+Join my telegram channel here : https://t.me/Deriv_Bots_Pro
 
 If you want to get all the premium bot/strategy, 
 
