@@ -1,7 +1,7 @@
 # Deriv-Bots-XML
 This is a collection https://dbot.deriv.com xml bots
 
-For more powerful profitable botsor one on one mentorship chat me;
+For more powerful profitable deriv bots or one on one mentorship chat me;
 
 WhatsApp Chat me at https://wa.me/254747204803
 
