@@ -67,6 +67,17 @@ There are over 40+ premium bots and strategies available  plus lifetime access t
 
 ---
 
+## 💎 Join the Inner Circle
+
+Step into a private trading community built for precision, profit, and elite strategy sharing.
+
+**𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌:** [https://t.me/Deriv_Bots_Trading](https://t.me/Deriv_Bots_Trading)  
+**𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏:** [https://chat.whatsapp.com/Fgh6GRJbmWV3MdCnnsFr38](https://chat.whatsapp.com/Fgh6GRJbmWV3MdCnnsFr38)
+
+> Access premium bots, live strategy drops, and mentorship from top-tier traders.  
+> This isn’t just a group, it’s your edge.
+
+---
 ## 🤝 Contribute
 
 We welcome all contributions:
@@ -90,7 +101,6 @@ If you’ve benefited from these bots, consider supporting by donating, contact 
 
 - 📱 WhatsApp: [Chat Now](https://wa.me/254747204803)  
 - 💬 Telegram: [@Deriv_Bot_Pro](https://t.me/Deriv_Bot_Pro)  
-- 📧 Email: derivkingnato@gmail.com  
+- 📧 Email: derivkingnato@gmail.com
 
----
 
