@@ -1,0 +1,187 @@
+                       <xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+  <variables>
+    <variable id="Stake">Stake</variable>
+    <variable id="Loss">Loss</variable>
+    <variable id="TargetProfit">Target Profit</variable>
+    <variable id="Stake2">stake 2</variable>
+  </variables>
+
+  <block type="trade" id="trade" x="10" y="10">
+    <field name="MARKET_LIST">synthetic_index</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_100</field>
+    <field name="TRADETYPECAT_LIST">digits</field>
+    <field name="TRADETYPE_LIST">overunder</field>
+    <field name="TYPE_LIST">both</field>
+    <field name="CANDLEINTERVAL_LIST">60</field>
+    <field name="TIME_MACHINE_ENABLED">FALSE</field>
+    <field name="RESTARTONERROR">TRUE</field>
+
+    <!-- INITIALIZATION -->
+    <statement name="INITIALIZATION">
+      <block type="variables_set">
+        <field name="VAR" id="Loss">Loss</field>
+        <value name="VALUE">
+          <block type="math_number"><field name="NUM">3</field></block>
+        </value>
+        <next>
+          <block type="variables_set">
+            <field name="VAR" id="TargetProfit">Target Profit</field>
+            <value name="VALUE">
+              <block type="math_number"><field name="NUM">1</field></block>
+            </value>
+            <next>
+              <block type="variables_set">
+                <field name="VAR" id="Stake">Stake</field>
+                <value name="VALUE">
+                  <block type="math_number"><field name="NUM">0.35</field></block>
+                </value>
+                <next>
+                  <block type="variables_set">
+                    <field name="VAR" id="Stake2">stake 2</field>
+                    <value name="VALUE">
+                      <block type="math_number"><field name="NUM">0.35</field></block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+
+    <!-- TRADE OPTIONS -->
+    <statement name="SUBMARKET">
+      <block type="tradeOptions">
+        <field name="DURATIONTYPE_LIST">t</field>
+        <field name="CURRENCY_LIST">USD</field>
+        <value name="DURATION">
+          <block type="math_number"><field name="NUM">1</field></block>
+        </value>
+        <value name="AMOUNT">
+          <block type="variables_get">
+            <field name="VAR" id="Stake">Stake</field>
+          </block>
+        </value>
+        <value name="PREDICTION">
+          <shadow type="math_number"><field name="NUM">5</field></shadow>
+        </value>
+      </block>
+    </statement>
+
+  </block>
+
+  <!-- AFTER PURCHASE -->
+  <block type="after_purchase" id="finish" x="10" y="300">
+    <statement name="AFTERPURCHASE_STACK">
+
+      <!-- IF WIN -->
+      <block type="controls_if">
+        <mutation else="1"></mutation>
+
+        <value name="IF0">
+          <block type="contract_check_result">
+            <field name="CHECK_RESULT">win</field>
+          </block>
+        </value>
+
+        <statement name="DO0">
+          <block type="variables_set">
+            <field name="VAR" id="Stake">Stake</field>
+            <value name="VALUE">
+              <block type="variables_get">
+                <field name="VAR" id="Stake2">stake 2</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+
+        <!-- ELSE = LOSS -->
+        <statement name="ELSE">
+          <!-- NO MARTINGALA, NO MULTIPLICACIÓN -->
+          <block type="variables_set">
+            <field name="VAR" id="Stake">Stake</field>
+            <value name="VALUE">
+              <block type="variables_get">
+                <field name="VAR" id="Stake2">stake 2</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+
+        <next>
+
+          <!-- PRINT TOTAL PROFIT -->
+          <block type="notify">
+            <field name="NOTIFICATION_TYPE">info</field>
+            <field name="NOTIFICATION_SOUND">silent</field>
+            <value name="MESSAGE">
+              <block type="text_join">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text"><field name="TEXT">Total Profit: </field></block>
+                </value>
+                <value name="ADD1">
+                  <block type="total_profit"></block>
+                </value>
+              </block>
+            </value>
+            <next>
+
+              <!-- CHECK TARGET PROFIT -->
+              <block type="controls_if">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare">
+                    <field name="OP">LT</field>
+                    <value name="A"><block type="total_profit"></block></value>
+                    <value name="B">
+                      <block type="variables_get">
+                        <field name="VAR" id="TargetProfit">Target Profit</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+
+                <!-- CONTINUE TRADING -->
+                <statement name="DO0">
+                  <block type="trade_again"></block>
+                </statement>
+
+                <!-- STOP (REACHED TARGET) -->
+                <statement name="ELSE">
+                  <block type="text_print">
+                    <value name="TEXT">
+                      <block type="text_join">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text"><field name="TEXT">Finished! Profit: </field></block>
+                        </value>
+                        <value name="ADD1"><block type="total_profit"></block></value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+
+              </block>
+
+            </next>
+          </block>
+
+        </next>
+      </block>
+
+    </statement>
+  </block>
+
+  <!-- BEFORE PURCHASE -->
+  <block type="before_purchase" id="strategy" x="10" y="600">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="purchase">
+        <field name="PURCHASE_LIST">DIGITOVER</field>
+      </block>
+    </statement>
+  </block>
+
+</xml> 
