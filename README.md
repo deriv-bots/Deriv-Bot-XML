@@ -1,4 +1,4 @@
-<h1 align="center">🚀 2026 Deriv Bots XML Collection 📄</h1>
+<h1 align="center">🚀 Deriv Bots XML Collection 📄</h1>
 
 <p align="center">
 Accurated set of XML bots for <a href="https://track.deriv.com/_tyV1h4aN9QKFfUyb_9NCN2Nd7ZgqdRLk/1/">dbot.deriv.com</a>  optimized for performance, precision, and profit.
@@ -8,7 +8,7 @@ Accurated set of XML bots for <a href="https://track.deriv.com/_tyV1h4aN9QKFfUyb
 
 ## 🔧 What’s Inside
 
-This repo contains a collection of XML-based Deriv bots designed for automated binary options trading. These bots leverage strategies like:
+This repo contains a collection of XML-based Deriv bots designed for automated binary options trading. These bs leverage strategies like:
 
 - ✅ Tick movement analysis  
 - ✅ Last digit pattern recognition  
@@ -41,7 +41,7 @@ Want premium bots or 1-on-1 guidance? Reach out:
 
 - 📱 WhatsApp: [Chat Now](https://wa.me/254747204803)  
 - 💬 Telegram: [@Deriv_Pro](https://t.me/Deriv_Pro)  
-- 📧 Email: derivkingnato@gmail.com  
+- 📧 Email: monarchtrades@outlook.com 
 
 ---
 
@@ -53,7 +53,7 @@ There are over 40+ premium bots and strategies available  plus lifetime access t
 - Contact me for pricing:
 - 📱 WhatsApp: [Chat Now](https://wa.me/254747204803)  
 - 💬 Telegram: [@Deriv_Pro](https://t.me/Deriv_Pro)  
-- 📧 Email: derivkingnato@gmail.com  
+- 📧 Email: monarchtrades@outlook.com 
 
 ---
 
@@ -101,7 +101,7 @@ If you’ve benefited from these bots, consider supporting by donating, contact 
 
 - 📱 WhatsApp: [Chat Now](https://wa.me/254747204803)  
 - 💬 Telegram: [@Deriv_Pro](https://t.me/Deriv_Pro)  
-- 📧 Email: derivkingnato@gmail.com
+- 📧 Email: monarchtrades@outlook.com
 
 
 
